@@ -1,3 +1,7 @@
+<img width="1204" height="2404" alt="image" src="https://github.com/user-attachments/assets/ae981ba3-922a-41bf-9875-1deb24d4d2b3" />
+
+
+
 # Book Review App — Infrastructure as Code
 
 Modular Terraform deployment of the Book Review App
