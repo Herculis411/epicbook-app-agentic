@@ -1,0 +1,44 @@
+# ── Terraform State & Sensitive Files ─────────────────────────────────────
+terraform.tfvars
+terraform.tfvars.json
+*.tfvars
+*.tfvars.json
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+crash.log
+override.tf
+tfplan
+tfplan.*
+*.plan
+
+# ── SSH & Keys ─────────────────────────────────────────────────────────────
+*.pem
+*.ppk
+*.key
+id_rsa
+id_ed25519
+
+# ── Environment Variables ──────────────────────────────────────────────────
+.env
+.env.*
+.env.local
+
+# ── Claude Code Local Settings ────────────────────────────────────────────
+.claude/settings.local.json
+
+# ── OS Files ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.swp
+
+# ── Logs ──────────────────────────────────────────────────────────────────
+*.log
+logs/

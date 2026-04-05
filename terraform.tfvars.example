@@ -1,0 +1,33 @@
+########################################################################
+# terraform.tfvars.example
+# Copy this file to terraform.tfvars and fill in your real values.
+# terraform.tfvars is excluded from git — this example file is safe to commit.
+########################################################################
+
+# ── General ────────────────────────────────────────────────────────────────
+aws_region   = "us-east-1"
+project_name = "book-review"
+environment  = "production"
+
+# ── Networking ─────────────────────────────────────────────────────────────
+vpc_cidr           = "10.0.0.0/16"
+availability_zones = ["us-east-1a", "us-east-1b"]
+web_subnet_cidrs   = ["10.0.1.0/24", "10.0.2.0/24"]
+app_subnet_cidrs   = ["10.0.3.0/24", "10.0.4.0/24"]
+db_subnet_cidrs    = ["10.0.5.0/24", "10.0.6.0/24"]
+
+# ── EC2 ────────────────────────────────────────────────────────────────────
+key_name          = "your-aws-keypair-name"    # Replace with your key pair name
+web_instance_type = "t3.small"
+app_instance_type = "t3.small"
+
+# ── Database ───────────────────────────────────────────────────────────────
+db_name           = "book_review_db"
+db_username       = "admindb"
+db_password       = "CHANGE_ME_Strong_Password_2026!"   # Min 8 chars, mixed case + number + special
+db_instance_class = "db.t3.micro"
+db_multi_az       = true
+
+# ── Application ────────────────────────────────────────────────────────────
+jwt_secret = "CHANGE_ME_minimum_32_characters_long_random_string"
+# Generate with: openssl rand -base64 48

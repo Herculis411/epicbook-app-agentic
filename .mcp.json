@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "terraform": {
+      "type": "stdio",
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "-e", "TFE_TOKEN=none", "hashicorp/terraform-mcp-server:0.4.0"],
+      "scope": "project"
+    },
+    "aws": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["awslabs.aws-documentation-mcp-server@latest"],
+      "scope": "project"
+    }
+  }
+}
